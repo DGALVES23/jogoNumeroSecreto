@@ -17,10 +17,11 @@ function verificaSeOChuteEValido(chute) {
       }
 
       if (numero === numeroSecreto) {
+            StopTimer()
             document.body.innerHTML = `
             <h2>Você Acertou!</h2>
             <h3>O número secreto era ${numeroSecreto}</h3>
-            <button id="jogarNovamente" class="jogarNovamente"> Jogar Novamente</button>
+            <button id="jogarNovamente" class="jogarNovamente"> Iniciar </button>
             `           
       }
 }
